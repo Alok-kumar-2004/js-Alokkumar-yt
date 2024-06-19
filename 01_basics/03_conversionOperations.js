@@ -17,9 +17,41 @@ let loggedIn=44
 
 // console.log(booleanIsLoggedIn)
 
-let someNumber = 63
-let stringNumber=String(someNumber)
+// let someNumber = 63
+// let stringNumber=String(someNumber)
 
-console.log(stringNumber)
-console.log(typeof stringNumber)
+// console.log(stringNumber)
+// console.log(typeof stringNumber)
 
+
+// let val = 4
+// let negval= -val
+// console.log(negval)
+
+// console.log(2+2)
+// console.log(2*2)
+// console.log(2/2)
+// console.log(2**2)
+// console.log(2%2)
+
+
+// let str1 = "Hello "
+// let str2 = "Alokkumar"
+// let str3 = str1+str2
+// console.log(str3)
+
+
+// console.log("1"+2);
+// console.log(1+"2");
+// console.log("1"+2+2);
+// console.log(1+2+"2");
+
+//console.log(true);
+//console.log(+true);=>converts it into 1 as output
+//console.log(+"");=>converts it into 0 as output
+
+
+// let gameCounter=100
+// gameCounter++
+// ++gameCounter
+// console.log(gameCounter);
