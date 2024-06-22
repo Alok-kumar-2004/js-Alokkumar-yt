@@ -20,7 +20,7 @@ console.log(usableAnotherArray);
 
 console.log(Array.isArray("Alokkumar"))//=>It will give answer if the given element is an Array
 console.log(Array.from("Alokkumar"))//=>It will convert the given element into Array.
-console.log(Array.from({name:"Alokkumar"}))// it will return null array as it acnt convert key value pair into array
+console.log(Array.from({name:"Alokkumar"}))// it will return null array as it cant convert key value pair into array
 
 
 let score1=200
