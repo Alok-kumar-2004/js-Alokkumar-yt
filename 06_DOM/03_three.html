@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alokkumar Js Code </title>
+
+</head>
+<body style="background-color: black; color :aliceblue ;">
+    <script>
+        const div = document.createElement('div')
+        console.log(div);
+        div.className="main"
+        div.id=Math.round(Math.random()*10+1)
+        div.setAttribute('title','Generated title')
+        div.style.backgroundColor='blue'
+        div.style.padding='15px'
+        div.style.borderRadius='15px'
+        // div.innerText='Chai aur code doing on 1st july. 'OR
+        const addText = document.createTextNode("Chai aur code doing on 1st july.")
+        div.appendChild(addText)
+        document.body.appendChild(div)
+
+    </script>
+
+// this can be used as function like 'create a new div ' where we can pass parameter
+// such color, className etc. and we can run a loop on function so that we don't have 
+// to repeat stuff. 
+</body>
+</html>
