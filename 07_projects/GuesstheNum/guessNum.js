@@ -53,7 +53,7 @@ function checkGuess(guess) {
         displayMessage(`Number is too high `)
     }
 }
-
+// this function is used to clean the previously guessed number and increment the numGuess and reduce the remaining Number 
 function displayGuess(guess) {
     userInput.value= ""
     guessSlot.innerHTML+=`${guess},`
