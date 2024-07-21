@@ -11,4 +11,20 @@ function createUser(username,email,password){
 }
 
 const Alok = new createUser('Alokkumar','abc@gmail.com',12345)
-console.log(Alok);
+// console.log(Alok);
+
+const person = {
+    fullName: function() {
+      return this.firstName + " " + this.lastName;
+    }
+  }
+  const person1 = {
+    firstName:"Alokkumar",
+    lastName: "Singh"
+  }
+  const person2 = {
+    firstName:"Alokkkk",
+    lastName: "singhhh"
+  }
+  
+  console.log(person.fullName.call(person2));
