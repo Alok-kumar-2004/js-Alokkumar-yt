@@ -3,9 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Closure</title>
+    <title>Closure in JS</title>
 </head>
-<body>
-    
+<body style="background-color: rgb(11, 11, 11);">
+    <button id="orange">Orange</button>
+    <button id="green"> Green</button>
 </body>
+<script>
+    // function init(){
+    //     let name = 'Alokkumar'
+    //     function getName(){
+    //         console.log(name);
+    //     }
+    //     getName();
+    // }
+    // init();
+
+    // function Outer(){
+    //    let username ='Alokkumar'
+    // //    console.log("OUTER:" , secret);
+       
+    //    function inner(){
+    //     let secret = "My123443"
+    //     console.log("INNER:",username);
+    //    }
+
+    //    function innerTwo(){
+    //     console.log("innerTwo:",username);
+    //     // console.log(secret);
+    //    }
+
+    //    inner()
+    //    innerTwo()
+    // }
+    // Outer()
+    // console.log('TOO Outer :',username);
+
+
+    // function makeFunc(){
+    //     const name="Google"
+    //     function displayname(){
+    //         console.log(name);
+    //     }
+    //     return displayname;
+    // }
+
+    // const myFunc = makeFunc();
+    // myFunc()
+
+    </script>
+<script>
+    document.getElementById('orange').onclick=function(){
+        document.body.style.backgroundColor=`orange`
+    }
+    document.getElementById('green').onclick=function(){
+        document.body.style.backgroundColor=`green`
+    }
+
+    function clickHandler(color){
+        // document.body.style.backgroundColor=`${color}`
+
+        return function(){
+            document.body.style.backgroundColor=`${color}`
+        }
+    }
+    document.getElementById("orange").onclick=clickHandler("orange")
+    document.getElementById("green").onclick=clickHandler("green")
+</script>
 </html>
